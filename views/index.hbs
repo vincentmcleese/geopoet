@@ -8,15 +8,32 @@
 <body>
   <div class="container">
     {{>header}}
-<h1>{{title}}</h1>
-<form>
-  <input placeholder="adjective">
-  <button>Submit</button>
-</form>
+
+    <div class="jumbotron text-center">
+      <h2 class="display-4">Geographic Simile Generater</h2>
+      <p class="lead">Be as creative as a cartographer.</p>
+      <hr class="my-4">
+      <form class="form-inline justify-content-center">
+        <input class="form-control mr-sm-2" type="search" placeholder="type an adjective" aria-label="Search">
+        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Make Geo Simile</button>
+      </form>
+      <div class="alert alert-danger mx-auto" role="alert" style="display: none" id="m1div">
+        
+        </div>
+            <hr class="my-4">
+          <h4 id="m2"></h4>
+    </div>
+
+
+
+
 
 <p id="m1"></p>
 
-<p id="m2"></p>
+<div id="main"></div>
+
+
+
 
 
 
