@@ -1,8 +1,5 @@
 console.log('client side javescript loaded.')
 
-
-
-
 const submitForm = document.querySelector('form')
 const inputedAdjective = document.querySelector('input')
 const messageOne = document.querySelector('#m1')
@@ -15,7 +12,7 @@ submitForm.addEventListener('submit', (e) => {
 
   const adjective = inputedAdjective.value
 
-  fetch('http://localhost:3000/new?adjective=' + adjective).then((response) => {
+  fetch('/new?adjective=' + adjective).then((response) => {
     response.json().then((data) => {
       if(data.error) {
          messageOne.textContent = data.error
